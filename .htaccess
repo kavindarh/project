@@ -1,0 +1,6 @@
+RewriteEngine ON
+
+ErrorDocument 404 /404.html
+
+RewriteCond %{HTTP_HOST} !^providencebpo.com$ [NC]
+RewriteRule ^(.*)$ http://providencebpo.com/$1 [R=301,L]

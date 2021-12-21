@@ -1,0 +1,668 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Outsourcing Contact Center India, Inbound &amp; Outbound Call Center - Providence BPO</title>
+
+<meta name="description" content="Providence is one of the leading outsourcing contact centers (India). We provide you with performance-driven and high quality outsourcing services. We take help of strategic solutions to fulfill your overall mission.." />
+
+<meta name="keywords" content="outsourcing contact center india, inbound call center, outbound call center." />
+<script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+    <script type="text/javascript" src="js/jquery.pngFix.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-1.0.0.js"></script>
+
+    <script type="text/javascript" src="js/swfobject.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/fancy.css"/>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("a[@rel*=fancyvideo]").fancybox({
+                overlayShow: true,
+                frameWidth:640,
+                frameHeight:360
+            });
+        });
+    </script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {		
+	
+	//Execute the slideShow
+	slideShow();
+
+});
+
+function slideShow() {
+
+	//Set the opacity of all images to 0
+	$('#gallery a').css({opacity: 0.0});
+	
+	//Get the first image and display it (set it to full opacity)
+	$('#gallery a:first').css({opacity: 1.0});
+	
+	//Set the caption background to semi-transparent
+	$('#gallery .caption').css({opacity: 0.7});
+
+	//Resize the width of the caption according to the image width
+	$('#gallery .caption').css({width: $('#gallery a').find('img').css('width')});
+	
+	//Get the caption of the first image from REL attribute and display it
+	$('#gallery .content').html($('#gallery a:first').find('img').attr('rel'))
+	.animate({opacity: 0.7}, 400);
+	
+	//Call the gallery function to run the slideshow, 6000 = change to next image after 6 seconds
+	setInterval('gallery()',6000);
+	
+}
+
+function gallery() {
+	
+	//if no IMGs have the show class, grab the first image
+	var current = ($('#gallery a.show')?  $('#gallery a.show') : $('#gallery a:first'));
+
+	//Get next image, if it reached the end of the slideshow, rotate it back to the first image
+	var next = ((current.next().length) ? ((current.next().hasClass('caption'))? $('#gallery a:first') :current.next()) : $('#gallery a:first'));	
+	
+	//Get next image caption
+	var caption = next.find('img').attr('rel');	
+	
+	//Set the fade in effect for the next image, show class has higher z-index
+	next.css({opacity: 0.0})
+	.addClass('show')
+	.animate({opacity: 1.0}, 1000);
+
+	//Hide the current image
+	current.animate({opacity: 0.0}, 1000)
+	.removeClass('show');
+	
+	//Set the opacity to 0 and height to 1px
+	$('#gallery .caption').animate({opacity: 0.0}, { queue:false, duration:0 }).animate({height: '1px'}, { queue:true, duration:300 });	
+	
+	//Animate the caption, opacity to 0.7 and heigth to 100px, a slide up effect
+	$('#gallery .caption').animate({opacity: 0.8},100 ).animate({height: '57px'},500 );
+	
+	//Display the content
+	$('#gallery .content').html(caption);
+	
+	
+}
+
+</script>
+<script type="text/javascript">
+<!--
+function isNumeric(elem){
+	var numericExpression = /^[0-9]+$/;
+	if(elem.value.match(numericExpression)){
+	  return true;
+	}else{
+	  return false;
+	}
+}
+
+function isEmail(elem){
+	var emailExp = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+	if(elem.value.match(emailExp)){
+	   return true;
+	}else{
+	   return false;
+	}
+}
+
+function MM_validateForm() { //v4.0
+
+  var errors='';
+
+   if(document.getElementById('textfield').value==''){
+	errors += ' Full name is required.\n';
+	alert(errors);
+	document.getElementById('textfield').focus();
+	return false;
+    }
+
+   if(document.getElementById('textfield2').value==''){
+		errors += ' Phone is required.\n';
+		alert(errors);
+		document.getElementById('textfield2').focus();
+		return false;
+	    }else{
+	       if(!isNumeric(document.getElementById('textfield2'))){
+		    alert('Phone must be number.');
+		    document.getElementById('textfield2').focus();
+		    return false;
+		}
+	    }
+   
+   if(document.getElementById('textfield3').value==''){
+	errors += ' Email is required.\n';
+	alert(errors);
+	return false;
+    }else{
+       if(!isEmail(document.getElementById('textfield3'))){
+	    alert('Email is not valid.')
+	    document.getElementById('textfield3').focus();
+	    return false;
+	}
+    }
+
+    
+
+    if(document.getElementById('textfield4').value==''){
+    	errors += ' Country is required.\n';
+    	alert(errors);
+    	document.getElementById('textfield4').focus();
+    	return false;
+        }
+    
+  
+   }
+//-->
+</script>
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(images/new_bg.jpg);
+	background-repeat: repeat-x;
+	background-color: #d4d4d4;
+}
+.clear {
+	clear:both
+}
+
+#gallery {
+	position:relative;
+	height:301px
+}
+	#gallery a {
+		float:left;
+		position:absolute;
+	}
+	
+	#gallery a img {
+		border:none;
+	}
+	
+	#gallery a.show {
+		z-index:500
+	}
+
+		#gallery .caption {
+	z-index:600;
+	background-color:#023262;
+	color:#ffffff;
+	height:57px;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	}
+
+	#gallery .caption .content {
+	margin:5px;
+	height: 50px;
+	}
+	
+	#gallery .caption .content h3 {
+	margin:0;
+	color:#FFF;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0;
+	padding-left: 0;
+	text-transform: uppercase;
+	font-family: Verdana, Geneva, sans-serif;
+	line-height: 20px;
+	}
+</style>
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<!-- G A Code -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17885142-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- End of G A Code -->
+</head>
+
+<body onload="MM_preloadImages('images/services_hover.jpg','images/home.jpg')">
+<table width="875" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="49">&nbsp;</td>
+      </tr>
+      <tr>
+        <td><img src="images/top_corner.gif" width="875" height="15" /></td>
+      </tr>
+      <tr>
+        <td class="mid_bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="12%"><img src="images/logo.jpg" width="318" height="87" alt="Providence Business Services - Customer Service Company" /></td>
+                <td width="88%" valign="bottom"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="50" align="right" valign="middle" class="hedding">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="125">&nbsp;</td>
+                        <td width="96"><a href="http://www.providencebpo.com/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image18','','images/home_hover.jpg',1)"><img src="images/home_hover.jpg" name="Image18" width="96" height="34" border="0" id="Image18" alt="Home - Providence BPO" /></a></td>
+                        <td width="1">&nbsp;</td>
+                        
+                        <td width="96"><img src="images/hover_aboutus.jpg" width="96" height="34" alt="About Providence BPO" /></td>
+                        <td width="1">&nbsp;</td>
+                        <td width="96"><a href="our_value.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image20','','images/our_value.jpg',1)"><img src="images/our_value_main.jpg" name="Image20" width="96" height="34" border="0" id="Image20"  alt="Providence BPO – Our Value" /></a></td>
+                        <td width="1">&nbsp;</td>
+                        <td width="96"><a href="services.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image30','','images/services_hover.jpg',1)"><img src="images/services.jpg" alt="Providence BPO Services" name="Image30" width="96" height="34" border="0" id="Image30" /></a></td>
+                        <td width="1">&nbsp;</td>
+                        <td width="96"><a href="contactus.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image17','','images/contact_hover.jpg',0)"><img src="images/contact_us.jpg" alt="Contact Us" name="Image17" width="96" height="34" border="0" id="Image17" /></a></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                </table></td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td height="1" bgcolor="#e1e1e1"></td>
+          </tr>
+          <tr>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="61%"><div id="gallery"><a href="#" class="show"> <img src="images/banner.jpg" alt="Flowing Rock" width="535" height="301" title="" alt="" rel="<h3>SUCCESSFUL BUSINESS SOLUTIONS <br> EXCEEDING EXPECTATIONS</h3>"/> 
+                          </a> <a href="#"> <img src="images/banner_1.jpg" alt="Grass Blades" width="535" height="301" title="" alt="" rel="<h3>You don't need to spare your high cost 
+resources on <br>your non-core business zones!!!!</h3>"/> </a> <a href="#"> <img src="images/banner_2.jpg" alt="Ladybug" width="535" height="301" title="" alt="" rel="<br><h3>We have customized packages for you</h3>"/> 
+                          </a> <a href="#"> <img src="images/banner_3.jpg" alt="Lightning" width="535" height="301" title="" alt="" rel="<br><h3>Surpassing and Exceeding your Expectations</h3>"/> 
+                          </a> 
+                          <div class="caption"> 
+                            <div class="content"></div>
+                          </div>
+                        </div></td>
+                <td width="39%" align="left" valign="top" bgcolor="#042646"><table width="100%" border="0" cellspacing="1" cellpadding="0">
+                  <tr>
+                    <td height="301" align="left" valign="top" class="blue_bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="10"></td>
+                      </tr>
+                      <tr>
+                        <td height="40" align="center" bgcolor="#23579a" class="text">WELCOME</td>
+                      </tr>
+                      <tr>
+                        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="6%">&nbsp;</td>
+                            <td width="86%"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="10"></td>
+                              </tr>
+                              <tr>
+                                <td align="center" class="text1">To Providence Business Services</td>
+                              </tr>
+                              <tr>
+                                <td height="60" class="text2">An offshore contact center partner to businesses in USA, UK, Australia and Canada</td>
+                              </tr>
+                              <tr>
+                                <td class="text3">You no longer need to worry about an area that is not your core focus. Leave it in the hands of the experts allowing you to concentrate on your core functions and business interests allocating time and resources in the correct areas.</td>
+                              </tr>
+                              <tr>
+                                <td height="25" align="right" valign="bottom"><a href="aboutus.html"><img src="images/more_blue.jpg" width="107" height="21" border="0"  alt="More About Us" /></a></td>
+                              </tr>
+                            </table></td>
+                            <td width="6%">&nbsp;</td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                </table></td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#f4f4f4"><table width="100%" border="0" cellspacing="5" cellpadding="0">
+                  <tr>
+                    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="25" colspan="2" class="hedding">&nbsp;&nbsp;Providence BPO – Offshore contact center services</td>
+                        </tr>
+                      <tr>
+                        <td width="7%" align="center"><img src="images/tick_orange.jpg" width="18" height="15" /></td>
+                        <td width="93%" class="gray">Understanding Your Business </td>
+                      </tr>
+                      <tr>
+                        <td align="center"><img src="images/tick_orange.jpg" width="18" height="15" /></td>
+                        <td class="gray">Smooth Transition </td>
+                      </tr>
+                      <tr>
+                        <td align="center"><img src="images/tick_orange.jpg" width="18" height="15" /></td>
+                        <td class="gray">Process Expertise</td>
+                      </tr>
+                      <tr>
+                        <td align="center"><img src="images/tick_orange.jpg" width="18" height="15" /></td>
+                        <td class="gray"><div>Meeting and Exceeding Service Level Agreements</div></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                </table></td>
+                <td width="39%" bgcolor="#dddada"><table width="100%" border="0" cellspacing="5" cellpadding="0">
+                  <tr>
+                    <td align="center" class="hedding_3">A Member  of</td>
+                  </tr>
+                  <tr>
+                    <td align="center"><a href="http://www.slasscom.lk/" target="_blank"><img src="images/slasscom.jpg" width="271" height="61" border="0" /></a></td>
+                  </tr>
+                </table></td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td valign="top"><table width="100%" border="0" cellspacing="15" cellpadding="0">
+                  <tr>
+                    <td align="left" valign="top"><h1 class="hedding_1" style="font-size:12px;">A Premier Outsourcing Contact Center, India</h1>
+					
+                  <p class="mid_text">Do you want to outsource your business to a different country? Are you thinking of India, as it will save you dollars? If you are looking for a leading outsourcing contact centre, India, then we are at your service. Providence is one of the leading outsourcing contact centers (India).</p>
+
+                      <p class="mid_text">India is the most sought after place by most of the business organizations for two main reasons- the country is twelve hours ahead of the US, so it becomes viable for both the countries in having work co-ordination. Thus, your organization achieves 24x7 internal operations and customer service. The second reason is, the labor rate in India is much lower as compared to that of the US. So, you can save hundreds of dollars without compromising on the quality of work. As an outstanding location for outsourcing contact center, India has added advantage. Here you can take advantage of well trained, English speaking specialists, at cheaper cost. Quality-wise India’s BPO companies have self-imposed high standards for the quality of their products and services. So, there is a strong demand for India’s outsourcing services from industrial nations.</p>
+
+                      <p class="mid_text">At Providence, we provide you with performance-driven and high quality outsourcing services. We take help of strategic solutions to fulfill your overall mission. At Providence, our highly qualified professionals work together to complete each and every project efficiently, by staying at the very cutting edge of technology and business process management. We rigorously check for quality at all stages during project execution. We perk up customer satisfaction scores by trimming your operational expenditures. We have a wide range of outsourcing contact centre services and we specialize in providing data management, <a href="http://www.providencebpo.com" title="Inbound Call Center" style="color:#6F6F6F">inbound call center</a>, outbound call center, customer support, and so on. We believe in keepings things uncluttered, efficient and simple. The bottom line of our services is to function seamlessly with you, for giving your business optimum profits from the money invested.</p>
+
+                      <p class="mid_text">We are backed by competence, professionalism, industry exposure, and collective experience of over twenty years in the BPO industry. Our experience exceeds all others in outsourcing.  We have global recognition for providing our clients with quality customized services. Our team consists of more than hundred professionals who are the best in the BPO industry. We have trained the team members to focus on achieving your business goals. We offer committed, ongoing and quality work- which is our guiding principle. Our support and services are guaranteed to exceed your expectations.</p>
+
+                      <p class="mid_text"><br />
+                      </p></td>
+                  </tr>
+                </table></td>
+                <td width="39%" align="left" valign="top"><table width="100%" border="0" cellspacing="10" cellpadding="0">
+                   <tr>
+                    <td height="338" valign="top" class="email_bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="50" align="center" valign="middle" class="video">Providence BPO - Video Tour</td>
+                      </tr>
+                      <tr>
+                        <td><table width="100%" border="0" cellspacing="20" cellpadding="0">
+                          <tr>
+                            <td align="center"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td class="gallery clearfix">
+                                <a href="http://www.youtube.com/watch?v=iR8D7zM2Ygg" rel="fancyvideo" >
+                                <img src="images/about_video.jpg" width="274" height="196" border="0" /></a></td>
+                              </tr>
+                              <tr>
+                                <td height="60" class="services_head"><span class="gray">Know more about our company infrastructure, working culture and more..</span></td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      </table></td>
+                  </tr>
+                  <tr>
+                    <td width="318" height="338" valign="top" class="email_bg">
+                    <form id="contact_form" name="contact_form" method="post" action="thanks.php">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="50" align="center" valign="middle" class="email_text">Email Us</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="6%" rowspan="9">&nbsp;</td>
+                            <td width="33%" class="form_text">Name :</td>
+                            <td width="55%"><label for="textfield"></label>
+                              <input type="text" name="textfield" id="textfield" height="28" /></td>
+                            <td width="6%" rowspan="9">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td height="10" colspan="2"></td>
+                            </tr>
+                          <tr>
+                            <td class="form_text">Phone :</td>
+                            <td><input type="text" name="textfield2" id="textfield2" height="28" /></td>
+                            </tr>
+                          <tr>
+                            <td height="10" colspan="2"></td>
+                            </tr>
+                          <tr>
+                            <td class="form_text">Email :</td>
+                            <td><input type="text" name="textfield3" id="textfield3" height="28" /></td>
+                            </tr>
+                          <tr>
+                            <td height="10" colspan="2"></td>
+                            </tr>
+                          <tr>
+                            <td class="form_text">Country :</td>
+                            <td><input type="text" name="textfield4" id="textfield4" height="28" /></td>
+                            </tr>
+                          <tr>
+                            <td height="10" colspan="2"></td>
+                            </tr>
+                          <tr>
+                            <td class="form_text">Services :</td>
+                            <td><label for="select" height="28"></label>
+                              <select name="service" id="service">
+                                <option>Telephone Answering</option>
+                                <option>Third Party Verification</option>
+                                <option>Email Answering</option>
+                                <option>Web Chat</option>
+                                <option>Others</option>
+                              </select></td>
+                            </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td align="center">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="60" align="center"><br />
+                        <input type="hidden" value="1" name="frmSubmit" />
+                        <input type="image" img src="images/submit_blue.jpg" width="131" height="36" onclick="return MM_validateForm();"></td>
+                      </tr>
+                    </table>
+                    </form>
+                    </td>
+                  </tr>
+                                 </table></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><img src="images/bottom_corner.gif" width="875" height="15" /></td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td width="226"><a href="contact-centre-outsourcing-services.html" class="footer_text" title="Contact Centre Outsourcing Services">Contact 
+                        Centre Outsourcing Services</a></td>
+                      <td width="1" rowspan="6" bgcolor="#8e8e8e"></td>
+                      <td width="216">&nbsp;&nbsp;<a href="outbound-contact-centre.html" class="footer_text" title="Outbound Contact Centre">Outbound 
+                        Contact Centre </a></td>
+                      <td width="1" rowspan="6" bgcolor="#8e8e8e"></td>
+                      <td width="236">&nbsp;&nbsp;<a href="outbound-contact-center-outsourcing.html" class="footer_text" title="Outbound Contact Center Outsourcing">Outbound 
+                        Contact Center Outsourcing&nbsp;</a></td>
+                      <td width="1" rowspan="6" bgcolor="#8e8e8e"></td>
+                      <td width="192">&nbsp;&nbsp;<a href="call-centre-customer-services.html" class="footer_text" title="Call Centre Customer Services">Call 
+                        Centre Customer Services</a></td>
+                    </tr>
+                    <tr> 
+                      <td><a href="contact-centre-service-providers.html" class="footer_text" title="Contact Centre Service Providers">Contact 
+                        Centre Service Providers</a></td>
+                      <td>&nbsp;&nbsp;<a href="outsource-contact-center-services.html" class="footer_text" title="Outsource Contact Center Services">Outsource 
+                        Contact Center Services</a></td>
+                      <td>&nbsp;&nbsp;<a href="contact-center-support-services.html" class="footer_text" title="Contact Center Support Services">Contact 
+                        Center Support Services</a></td>
+                      <td>&nbsp;&nbsp;<a href="offshore-contact-center.html" class="footer_text" title="Offshore Contact Center">Offshore 
+                        Contact Center</a></td>
+                    </tr>
+                    <tr> 
+                      <td><a href="#" class="footer_text" title="Outsourced Contact Centers">Outsourced 
+                        Contact Centers</a></td>
+                      <td>&nbsp;&nbsp;<a href="outbound-ivr.html" class="footer_text" title="Outbound IVR">Outbound 
+                        IVR</a></td>
+                      <td>&nbsp;&nbsp;<a href="ivr-outsourcing.html" class="footer_text" title="IVR Outsourcing">IVR 
+                        Outsourcing </a></td>
+                      <td>&nbsp;&nbsp;<a href="customer-service-outsourcing.html" class="footer_text" title="Customer Service Outsourcing">Customer 
+                        Service Outsourcing</a></td>
+                    </tr>
+                    <tr> 
+                      <td><a href="business-contact-center.html" class="footer_text" title="Business Contact Center">Business 
+                        Contact Center </a></td>
+                      <td>&nbsp;&nbsp;<a href="inbound-contact-center.html" class="footer_text" title="Inbound Contact Center">Inbound 
+                        Contact Center</a></td>
+                      <td>&nbsp;&nbsp;<a href="inbound-ivr.html" class="footer_text" title="Inbound IVR">Inbound 
+                        IVR </a></td>
+                      <td>&nbsp;&nbsp;<a href="international-call-centers.html" class="footer_text" title="International Contact Centers">International 
+                        Contact Centers</a></td>
+                    </tr>
+                    <tr> 
+                      <td><a href="overseas-contact-centers.html" class="footer_text" title="Overseas Contact Centers">Overseas 
+                        Contact Centers </a></td>
+                      <td>&nbsp;&nbsp;<a href="offshore-contact-center-india.html" class="footer_text" title="Offshore Contact Center India">Offshore 
+                        Contact Center India </a></td>
+                      <td>&nbsp;&nbsp;<a href="outsourcing-contact-center-india.html" class="footer_text" title="Outsourcing Contact Center India">Outsourcing 
+                        Contact Center India</a></td>
+                      <td>&nbsp;<a href="contact-center-services-india.html" class="footer_text" title="Contact Center Services India">&nbsp;Contact 
+                        Center Services India</a></td>
+                    </tr>
+                    <tr> 
+                      <td><a href="outbound-contact-center-india.html" class="footer_text" title="Outbound Contact Center India">Outbound 
+                        Contact Center India </a></td>
+                      <td>&nbsp;&nbsp;<a href="call-center-phillipines.html" class="footer_text" title="Call Center Phillipines">Call 
+                        Center Phillipines </a></td>
+                      <td>&nbsp;&nbsp;<a href="http://www.providencebpo.com/business-process-outsourcing-services.html" class="footer_text" title="Business Process Outsourcing Services">Business 
+                        Process Outsourcing Services</a></td>
+                      <td>&nbsp;&nbsp;<a href="http://www.providencebpo.com/business-to-business-customer-service.html" class="footer_text" title="Business to Business Customer Service">Business 
+                        to Business Customer &nbsp; Service</a></td>
+                    </tr>
+                    <tr> 
+                      <td><a href="http://www.providencebpo.com/business-to-business-telemarketing-services.html" class="footer_text" title="Business to Business Telemarketing Services">Business 
+                        to Business Telemarketing &nbsp;&nbsp; Services</a></td>
+                      <td bgcolor="#8e8e8e"></td>
+                      <td>&nbsp;&nbsp;<a href="http://www.providencebpo.com/customer-support-services.html" class="footer_text" title="Customer Support Services">Customer 
+                        Support Services</a></td>
+                      <td bgcolor="#8e8e8e"></td>
+                      <td>&nbsp;&nbsp;<a href="http://www.providencebpo.com/inbound-call-centers.html" class="footer_text" title="Inbound Call Centers">Inbound 
+                        Call Centers</a></td>
+                      <td bgcolor="#8e8e8e"></td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td bgcolor="#8e8e8e"></td>
+                      <td>&nbsp;</td>
+                      <td bgcolor="#8e8e8e"></td>
+                      <td>&nbsp;</td>
+                      <td bgcolor="#8e8e8e"></td>
+                      <td>&nbsp;</td>
+                    </tr>
+                  </table></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td valign="top"><span class="footer_text"><a href="http://www.providencebpo.com/" class="footer_text" title="Home">Home</a></span> <span class="footer_text">|</span> <a href="aboutus.html" class="footer_text" title="About Us">About Us</a><span class="footer_text"> |</span> <a href="http://www.providencebpo.com/our_value.html" class="footer_text" title="Our Values">Our Values</a> <span class="footer_text">|</span> <a href="services.html" class="footer_text" title="Our Services">Our Services</a> <span class="footer_text">|</span> <a href="contactus.html" class="footer_text" title="Contact Us">Contact Us</a></td>
+                <td align="right" valign="top" class="footer_text">                  Copyrights © 2010, Providence. All rights Reserved</td>
+              </tr>
+              <tr>
+                <td valign="top">&nbsp;</td>
+                <td align="right" valign="top" class="footer_text">&nbsp;</td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animationSpeed:'slow',theme:'light_square',slideshow:2000, autoplay_slideshow: true});
+			$(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animationSpeed:'fast',slideshow:10000});
+			
+			$("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
+				custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
+				changepicturecallback: function(){ initialize(); }
+			});
+
+			$("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
+				custom_markup: '<div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1251710" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
+				changepicturecallback: function(){ _bsap.exec(); }
+			});
+		});
+		</script>
+<!-- Google Analytical Code -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17885142-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- Eof Google Analytical Code -->
+
+</body>
+</html>

@@ -1,0 +1,598 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Customer Service Call Center, Inbound Contact Center, Telephone Answering &amp;amp; Help Desk Services, Business to Business Customer Service Company - Providence BPO</title>
+<script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+    <script type="text/javascript" src="js/jquery.pngFix.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-1.0.0.js"></script>
+
+    <script type="text/javascript" src="js/swfobject.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/fancy.css"/>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("a[@rel*=fancyvideo]").fancybox({
+                overlayShow: true,
+                frameWidth:640,
+                frameHeight:360
+            });
+        });
+    </script>
+<script type="text/javascript">
+
+$(document).ready(function() {		
+	
+	//Execute the slideShow
+	slideShow();
+
+});
+
+function slideShow() {
+
+	//Set the opacity of all images to 0
+	$('#gallery a').css({opacity: 0.0});
+	
+	//Get the first image and display it (set it to full opacity)
+	$('#gallery a:first').css({opacity: 1.0});
+	
+	//Set the caption background to semi-transparent
+	$('#gallery .caption').css({opacity: 0.7});
+
+	//Resize the width of the caption according to the image width
+	$('#gallery .caption').css({width: $('#gallery a').find('img').css('width')});
+	
+	//Get the caption of the first image from REL attribute and display it
+	$('#gallery .content').html($('#gallery a:first').find('img').attr('rel'))
+	.animate({opacity: 0.7}, 400);
+	
+	//Call the gallery function to run the slideshow, 6000 = change to next image after 6 seconds
+	setInterval('gallery()',6000);
+	
+}
+
+function gallery() {
+	
+	//if no IMGs have the show class, grab the first image
+	var current = ($('#gallery a.show')?  $('#gallery a.show') : $('#gallery a:first'));
+
+	//Get next image, if it reached the end of the slideshow, rotate it back to the first image
+	var next = ((current.next().length) ? ((current.next().hasClass('caption'))? $('#gallery a:first') :current.next()) : $('#gallery a:first'));	
+	
+	//Get next image caption
+	var caption = next.find('img').attr('rel');	
+	
+	//Set the fade in effect for the next image, show class has higher z-index
+	next.css({opacity: 0.0})
+	.addClass('show')
+	.animate({opacity: 1.0}, 1000);
+
+	//Hide the current image
+	current.animate({opacity: 0.0}, 1000)
+	.removeClass('show');
+	
+	//Set the opacity to 0 and height to 1px
+	$('#gallery .caption').animate({opacity: 0.0}, { queue:false, duration:0 }).animate({height: '1px'}, { queue:true, duration:300 });	
+	
+	//Animate the caption, opacity to 0.7 and heigth to 100px, a slide up effect
+	$('#gallery .caption').animate({opacity: 0.7},100 ).animate({height: '57px'},500 );
+	
+	//Display the content
+	$('#gallery .content').html(caption);
+	
+	
+}
+
+</script>
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(images/bg.jpg);
+	background-repeat: repeat-x;
+}
+.clear {
+	clear:both
+}
+
+#gallery {
+	position:relative;
+	height:301px
+}
+	#gallery a {
+		float:left;
+		position:absolute;
+	}
+	
+	#gallery a img {
+		border:none;
+	}
+	
+	#gallery a.show {
+		z-index:500
+	}
+
+	#gallery .caption {
+	z-index:600;
+	background-color:#000;
+	color:#ffffff;
+	height:57px;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	}
+
+	#gallery .caption .content {
+	margin:5px;
+	height: 40px;
+	}
+	
+	#gallery .caption .content h3 {
+	margin:0;
+	color:#FFF;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 15;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	text-transform: uppercase;
+	}
+</style>
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<!-- G A Code -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17885142-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- End of G A Code -->
+</head>
+
+<body onload="MM_preloadImages('images/hover_aboutus.jpg','images/services_hover.jpg')">
+<table width="875" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="49">&nbsp;</td>
+      </tr>
+      <tr>
+        <td><img src="images/top_corner.gif" width="875" height="15" /></td>
+      </tr>
+      <tr>
+        <td class="mid_bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="12%"><img src="images/logo.jpg" width="318" height="87" /></td>
+                <td width="88%" valign="bottom"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="125">&nbsp;</td>
+                    <td width="96"><img src="images/home.jpg" width="96" height="34" /></td>
+                    <td width="1">&nbsp;</td>
+                    <td width="96"><a href="aboutus.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image15','','images/hover_aboutus.jpg',1)"><img src="images/aboutus.jpg" alt="About Us" name="Image15" width="96" height="34" border="0" id="Image15" /></a></td>
+                    <td width="1">&nbsp;</td>
+                    <td width="96"><a href="services.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image30','','images/services_hover.jpg',1)"><img src="images/services.jpg" alt="Services" name="Image30" width="96" height="34" border="0" id="Image30" /></a></td>
+                    <td width="1">&nbsp;</td>
+                    <td width="96"><a href="contactus.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image17','','images/contact_hover.jpg',0)"><img src="images/contact_us.jpg" alt="Contact Us" name="Image17" width="96" height="34" border="0" id="Image17" /></a></td>
+                    <td>&nbsp;</td>
+                  </tr>
+                </table></td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td height="1" bgcolor="#e1e1e1"></td>
+          </tr>
+          <tr>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="61%">
+                <div id="gallery">
+
+	<a href="#" class="show">
+		<img src="images/banner.jpg" alt="Flowing Rock" width="535" height="301" title="" alt="" rel="<h3>SUCCESSFUL BUSINESS SOLUTIONS <br> Exceeding Divine Excellence</h3>"/>
+	</a>
+	
+	<a href="#">
+		<img src="images/banner_1.jpg" alt="Grass Blades" width="535" height="301" title="" alt="" rel="<h3>You don't need to spare your high cost 
+resources <br> on your non-core business zones!!!!</h3>"/>
+	</a>
+	
+	<a href="#">
+		<img src="images/banner_2.jpg" alt="Ladybug" width="535" height="301" title="" alt="" rel="<h3>We have customized packages for you</h3>"/>
+	</a>
+
+	<a href="#">
+		<img src="images/banner_3.jpg" alt="Lightning" width="535" height="301" title="" alt="" rel="<h3>Surpassing and Exceeding your Expectations</h3>"/>
+	</a>
+  <div class="caption"><div class="content"></div></div>
+</div>
+<div class="clear"></div>
+
+                </td>
+                <td width="39%" align="left" valign="top" bgcolor="#042646"><table width="100%" border="0" cellspacing="1" cellpadding="0">
+                  <tr>
+                    <td height="301" align="left" valign="top" class="blue_bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="10"></td>
+                      </tr>
+                      <tr>
+                        <td height="40" align="center" bgcolor="#23579a" class="text">WELCOME</td>
+                      </tr>
+                      <tr>
+                        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="6%">&nbsp;</td>
+                            <td width="86%"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="10"></td>
+                              </tr>
+                              <tr>
+                                <td align="center" class="text1">To Providence Business Services</td>
+                              </tr>
+                              <tr>
+                                <td height="60" class="text2">An offshore contact center partner to businesses in USA, UK, Australia and Canada</td>
+                              </tr>
+                              <tr>
+                                <td class="text3">You no longer need to worry about an area that is not your core focus. Leave it in the hands of the experts allowing you to concentrate on your core functions and business interests allocating time and resources in the correct areas.</td>
+                              </tr>
+                              <tr>
+                                <td height="25" align="right" valign="bottom"><a href="aboutus.html"><img src="images/more_blue.jpg" width="107" height="21" border="0" /></a></td>
+                              </tr>
+                            </table></td>
+                            <td width="6%">&nbsp;</td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                </table></td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#f4f4f4"><table width="100%" border="0" cellspacing="5" cellpadding="0">
+                  <tr>
+                    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="25" colspan="2" class="hedding">&nbsp;&nbsp;Providence BPO – Offshore contact center services</td>
+                      </tr>
+                      <tr>
+                        <td width="7%" align="center"><img src="images/tick_orange.jpg" width="18" height="15" /></td>
+                        <td width="93%" class="gray">Understanding Your Business </td>
+                      </tr>
+                      <tr>
+                        <td align="center"><img src="images/tick_orange.jpg" width="18" height="15" /></td>
+                        <td class="gray">Smooth Transition </td>
+                      </tr>
+                      <tr>
+                        <td align="center"><img src="images/tick_orange.jpg" width="18" height="15" /></td>
+                        <td class="gray">Process Expertise</td>
+                      </tr>
+                      <tr>
+                        <td align="center"><img src="images/tick_orange.jpg" width="18" height="15" /></td>
+                        <td class="gray"><div>Meeting and Exceeding Service Level Agreements</div></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                </table></td>
+                <td width="39%" bgcolor="#dddada">&nbsp;</td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td valign="top"><table width="100%" border="0" cellspacing="15" cellpadding="0">
+                  <tr>
+                    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td class="hedding_1">World-Class Customer Services - 20 Years of Experience!</td>
+                      </tr>
+                      <tr>
+                        <td class="mid_text"><br />
+                          With over 20 years of experience in this field, our managerial team can handle any challenge. We provide a wide variety of services, all specifically geared and customized to your requirements.<br />
+                          <br /></td>
+                      </tr>
+                      <tr>
+                        <td height="30" class="hedding_1">Discover how we @ Providence can serve you!</td>
+                      </tr>
+                      <tr>
+                        <td><img src="images/telephone_services.jpg" width="225" height="29" /></td>
+                      </tr>
+                      <tr>
+                        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="10%" align="right"><img src="images/blue_tick.jpg" width="20" height="14" /></td>
+                            <td width="90%" height="25" class="mid_text">Help desk</td>
+                          </tr>
+                          <tr>
+                            <td align="right"><img src="images/blue_tick.jpg" width="20" height="14" /></td>
+                            <td height="25" class="mid_text">Order taking</td>
+                          </tr>
+                          <tr>
+                            <td align="right"><img src="images/blue_tick.jpg" width="20" height="14" /></td>
+                            <td height="25" class="mid_text">Customer service</td>
+                          </tr>
+                          <tr>
+                            <td align="right"><img src="images/blue_tick.jpg" width="20" height="14" /></td>
+                            <td height="25" class="mid_text">Technical support</td>
+                          </tr>
+                          <tr>
+                            <td align="right"><img src="images/blue_tick.jpg" width="20" height="14" /></td>
+                            <td height="25" class="mid_text">Answering service</td>
+                          </tr>
+                          <tr>
+                            <td align="right"><img src="images/blue_tick.jpg" width="20" height="14" /></td>
+                            <td height="25" class="mid_text">Debt collection </td>
+                          </tr>
+                          <tr>
+                            <td align="right"><img src="images/blue_tick.jpg" width="20" height="14" /></td>
+                            <td height="25" class="mid_text">Event registrations and enrollments</td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td><img src="images/third_party.jpg" width="242" height="29" /></td>
+                      </tr>
+                      <tr>
+                        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="10%" align="right"><img src="images/blue_tick.jpg" width="20" height="14" /></td>
+                            <td width="90%" height="25" class="mid_text">Live</td>
+                          </tr>
+                          <tr>
+                            <td align="right"><img src="images/blue_tick.jpg" width="20" height="14" /></td>
+                            <td height="25" class="mid_text">Pre recorded calls (turn around within 12 to 24 hrs)</td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td><img src="images/email.jpg" width="193" height="29" /></td>
+                      </tr>
+                      <tr>
+                        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="10%" align="right"><img src="images/blue_tick.jpg" width="20" height="14" /></td>
+                            <td width="90%" height="25" class="mid_text">Filtering or answering emails</td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td><img src="images/web_chat.jpg" width="144" height="29" /></td>
+                      </tr>
+                      <tr>
+                        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="10%" align="right"><img src="images/blue_tick.jpg" width="20" height="14" /></td>
+                            <td width="90%" height="25" class="mid_text">Live chat support for your online web site </td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                </table></td>
+                <td width="39%" align="left" valign="top"><table width="100%" border="0" cellspacing="10" cellpadding="0">
+                  <tr>
+                    <td width="318" height="338" valign="top" class="email_bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="50" align="center" valign="middle" class="email_text">Email Us</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="6%" rowspan="9">&nbsp;</td>
+                            <td width="33%" class="form_text">Name :</td>
+                            <td width="55%"><label for="textfield"></label>
+                              <input type="text" name="textfield" id="textfield" height="28" /></td>
+                            <td width="6%" rowspan="9">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td height="10" colspan="2"></td>
+                            </tr>
+                          <tr>
+                            <td class="form_text">Phone :</td>
+                            <td><input type="text" name="textfield2" id="textfield2" height="28" /></td>
+                            </tr>
+                          <tr>
+                            <td height="10" colspan="2"></td>
+                            </tr>
+                          <tr>
+                            <td class="form_text">Email :</td>
+                            <td><input type="text" name="textfield3" id="textfield3" height="28" /></td>
+                            </tr>
+                          <tr>
+                            <td height="10" colspan="2"></td>
+                            </tr>
+                          <tr>
+                            <td class="form_text">Country :</td>
+                            <td><input type="text" name="textfield4" id="textfield4" height="28" /></td>
+                            </tr>
+                          <tr>
+                            <td height="10" colspan="2"></td>
+                            </tr>
+                          <tr>
+                            <td class="form_text">Services :</td>
+                            <td><label for="select" height="28"></label>
+                              <select name="select" id="select">
+                                <option>Telephone Answering</option>
+                                <option>Third Party Verification</option>
+                                <option>Email Answering</option>
+                                <option>Web Chat</option>
+                              </select></td>
+                            </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td align="center">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="60" align="center"><br />                          <img src="images/submit.jpg" width="131" height="36" /></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td valign="top" class="email_bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="50" align="center" valign="middle" class="email_text">Client Testimonial</td>
+                      </tr>
+                      <tr>
+                        <td><table width="100%" border="0" cellspacing="10" cellpadding="0">
+                          <tr>
+                            <td align="center"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="center" class="gallery clearfix"><a href="http://www.youtube.com/watch?v=BEe5JzvoFLE" rel="fancyvideo" > <img src="images/client_testimonila.jpg" width="285" height="174" border="0" /></a></td>
+                              </tr>
+                              <tr>
+                                <td height="20" class="services_head">&nbsp;</td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      </table></td>
+                  </tr>
+                </table></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><img src="images/bottom_corner.gif" width="875" height="15" /></td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="226"><a href="contact-centre-outsourcing-services.html" class="footer_text">Contact Centre Outsourcing Services</a></td>
+                <td width="1" rowspan="6" bgcolor="#8e8e8e"></td>
+                <td width="216">&nbsp;&nbsp;<a href="outbound-contact-centre.html" class="footer_text">Outbound Contact Centre </a></td>
+                <td width="1" rowspan="6" bgcolor="#8e8e8e"></td>
+                <td width="236">&nbsp;&nbsp;<a href="outbound-contact-center-outsourcing.html" class="footer_text">Outbound Contact Center  Outsourcing&nbsp;</a></td>
+                <td width="1" rowspan="6" bgcolor="#8e8e8e"></td>
+                <td width="192">&nbsp;&nbsp;<a href="call-centre-customer-services.html" class="footer_text">Call Centre Customer Services</a></td>
+              </tr>
+              <tr>
+                <td><a href="contact-centre-service-providers.html" class="footer_text">Contact Centre Service Providers</a></td>
+                <td>&nbsp;&nbsp;<a href="outsource-contact-center-services.html" class="footer_text">Outsource Contact Center Services</a></td>
+                <td>&nbsp;&nbsp;<a href="contact-center-support-services.html" class="footer_text">Contact Center Support Services</a></td>
+                <td>&nbsp;&nbsp;<a href="offshore-contact-center.html" class="footer_text">Offshore Contact Center</a></td>
+              </tr>
+              <tr>
+                <td><a href="#" class="footer_text">Outsourced Contact Centers</a></td>
+                <td>&nbsp;&nbsp;<a href="outbound-ivr.html" class="footer_text">Outbound IVR</a></td>
+                <td>&nbsp;&nbsp;<a href="ivr-outsourcing.html" class="footer_text">IVR Outsourcing </a></td>
+                <td>&nbsp;&nbsp;<a href="customer-service-outsourcing.html" class="footer_text">Customer Service Outsourcing</a></td>
+              </tr>
+              <tr>
+                <td><a href="business-contact-center.html" class="footer_text">Business Contact Center </a></td>
+                <td>&nbsp;&nbsp;<a href="inbound-contact-center.html" class="footer_text">Inbound Contact Center</a></td>
+                <td>&nbsp;&nbsp;<a href="inbound-ivr.html" class="footer_text">Inbound IVR </a></td>
+                <td>&nbsp;&nbsp;<a href="international-call-centers.html" class="footer_text">International Contact Centers</a></td>
+              </tr>
+              <tr>
+                <td><a href="overseas-contact-centers.html" class="footer_text">Overseas Contact Centers </a></td>
+                <td>&nbsp;&nbsp;<a href="offshore-contact-center-india.html" class="footer_text">Offshore Contact Center India </a></td>
+                <td>&nbsp;&nbsp;<a href="outsourcing-contact-center-india.html" class="footer_text">Outsourcing Contact Center India</a></td>
+                <td>&nbsp;<a href="contact-center-services-india.html" class="footer_text">&nbsp;Contact Center Services India</a></td>
+              </tr>
+              <tr>
+                <td><a href="outbound-contact-center-india.html" class="footer_text">Outbound Contact Center India </a></td>
+                <td>&nbsp;&nbsp;<a href="call-center-phillipines.html" class="footer_text">Call Center Phillipines </a></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td valign="top"><span class="footer_text">Home</span> <span class="footer_text">|</span> <a href="#" class="footer_text">About Us</a><span class="footer_text"> |</span> <a href="#" class="footer_text">Our Services</a> <span class="footer_text">|</span> <a href="#" class="footer_text">Contact Us</a></td>
+                <td align="right" valign="top" class="footer_text">Providence Business Services (Pvt) Ltd, 151/3, Harcourt Building, Castle Street,<br />
+Colombo, Sri Lanka 00009<br />
+                  Tel: (94) 7 27 28 29 30, Email: info@providencebpo.com<br />
+                  Copyrights © 2010, Providence. All rights Reserved</td>
+              </tr>
+              <tr>
+                <td valign="top">&nbsp;</td>
+                <td align="right" valign="top" class="footer_text">&nbsp;</td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<!-- Google Analytical Code -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17885142-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- Eof Google Analytical Code -->
+
+</body>
+</html>
